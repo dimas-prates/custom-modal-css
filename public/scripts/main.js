@@ -1,4 +1,3 @@
-import IndexFunctions from "../scripts/index.js";
 const openBtn = document.querySelector("button");
 const closeBtn = document.querySelector('[data-button="close"]');
 const modal = document.querySelector(".modal");
@@ -29,9 +28,10 @@ modal.addEventListener("click", (e) => {
 form.addEventListener("submit", submitForm);
 function submitForm() {
   const card = document.querySelector(".card");
+  const backupContent = card.innerHTML;
   card.innerHTML = `<h1>Thanks for your subscription</h1>`;
-
   setTimeout(() => {
     closeModal();
-  }, 3000);
+    card.innerHTML = backupContent;
+  }, 2000);
 }
