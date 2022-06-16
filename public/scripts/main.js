@@ -14,6 +14,7 @@ closeBtn.addEventListener("click", closeModal);
 
 function closeModal() {
   modal.style.display = "none";
+  modal.classList.add("close-modal-animation");
 }
 
 modal.addEventListener("click", (e) => {
