@@ -16,6 +16,7 @@
     box-sizing: border-box;
     font-family: sans-serif;
 }
+
 /* Fix/Workaround for icons */
 i.fa-solid::before {
     font-family: "Font Awesome 6 Free";
