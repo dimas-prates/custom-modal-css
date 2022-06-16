@@ -13,8 +13,11 @@ function openModal() {
 closeBtn.addEventListener("click", closeModal);
 
 function closeModal() {
-  modal.style.display = "none";
   modal.classList.add("close-modal-animation");
+  setTimeout(() => {
+    modal.style.display = "none";
+    modal.classList.remove("close-modal-animation");
+  }, 500);
 }
 
 modal.addEventListener("click", (e) => {
