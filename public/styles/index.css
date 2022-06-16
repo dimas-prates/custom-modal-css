@@ -15,7 +15,7 @@ button {
     padding: 1rem 3rem;
     font-size: 1rem;
     transition: all 300ms ease;
-    /* position: fixed; */
+    position: fixed;
 }
 
 button:hover {
@@ -88,7 +88,7 @@ button:hover {
 }
 
 /* Media queries */
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 760px) {
     .modal .card {
         flex-direction: column;
         width: 80vw;
